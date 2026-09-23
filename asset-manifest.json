@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Plan-With-Shivam/static/css/main.392a0a71.css",
+    "main.js": "/Plan-With-Shivam/static/js/main.5cfa8b8c.js",
+    "index.html": "/Plan-With-Shivam/index.html",
+    "main.392a0a71.css.map": "/Plan-With-Shivam/static/css/main.392a0a71.css.map",
+    "main.5cfa8b8c.js.map": "/Plan-With-Shivam/static/js/main.5cfa8b8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.392a0a71.css",
+    "static/js/main.5cfa8b8c.js"
+  ]
+}
