@@ -1,11 +1,13 @@
 import { useState } from "react";
 
 
-function Card({ id, image, info, price, name, removeTour })  {
+function Card({ id, image, info, price, name, removeTour,addTour })  {
 
        const description = `${info.substring(0, 200)}....`;
         const[readmore,setReadmore] = useState(false);
  
+        const [interested, setInterested] = useState(false);
+
        function readmoreHandler(){
         
         setReadmore(!readmore);
@@ -33,7 +35,30 @@ function Card({ id, image, info, price, name, removeTour })  {
   <button className="btn-red" onClick ={() => removeTour(id)}>
     Not Interested
   </button>
-  
+  <button
+  className="btn-Orange"
+  onClick={() => setInterested(!interested)}
+>
+  Interested
+</button>
+
+{interested && (
+  <div className="interested-box">
+    <p>What would you like?</p>
+
+    <button className="interested-option">
+      Book this tour
+    </button>
+
+    <button className="interested-option">
+      Get more information
+    </button>
+
+    <button className="interested-option">
+      Contact me
+    </button>
+  </div>
+)}
   </div>
       
       

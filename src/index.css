@@ -99,19 +99,101 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10;
+    cursor: pointer;
+
     
 }
 
-.btn-white
-{
-    margin: 18px;
-    padding:10px 80px ;
-    border: 1px solid white;
+
+
+.btn-Orange {
+   font-weight: bold;
     cursor: pointer;
+    align-items: center;
+    border: 1px solid red;
+    background: color #a80f1421;
+    margin-top: 18px;
+    padding: 10px 80px;
+    border-radius: 15px;
+    color: black;
 }
 
-.btn-white :hover{
-    cursor: pointer;
-    background-color: white;
+.btn-Orange:hover{
+    background-color: #ff0b14df;
+    color: white;
     transition: all 0.2s;
+}
+
+/* Interested Button */
+.btn-Orange {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-Orange:hover {
+  background-color: #16a34a;
+}
+
+
+/* Interested Options Box */
+.interested-box {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Heading */
+.interested-box p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+/* Option Buttons */
+.interested-option {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 9px 12px;
+  background-color: white;
+  color: #333;
+  border: 1px solid #22c55e;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.interested-option:hover {
+  background-color: #22c55e;
+  color: white;
+}
+
+.btn-white {
+  background-color: white;
+  color: #333;
+  border: 2px solid #333;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn-white:hover {
+  background-color: #333;
+  color: white;
 }

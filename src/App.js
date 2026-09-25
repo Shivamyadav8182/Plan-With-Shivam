@@ -13,6 +13,15 @@ const App = () => {
      const newTours = tours.filter(tour => tour.id !== id);
 
      setTours(newTours);
+
+       }
+
+       
+   function addTour(id){
+
+     const newTours = tours.filter(tour => tour.id == id);
+
+     setTours(newTours);
        }
 
 
@@ -30,7 +39,7 @@ const App = () => {
 
   return ( <div>
     
-    <Tours tours = {tours} removeTour = {removeTour}>
+    <Tours tours = {tours} removeTour = {removeTour}  >
 
     </Tours>
   </div>
